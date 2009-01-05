@@ -7,7 +7,7 @@
 %define lib_name %mklibname %{shortname} %{api} %{major}
 %define develname %mklibname gdamm %{api} -d
 
-Name:           libgdamm3
+Name:           libgdamm4
 
 #(!) summary for SRPM only
 Summary:        C++ wrappers for libgda
