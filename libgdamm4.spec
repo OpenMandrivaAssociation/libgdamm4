@@ -11,12 +11,12 @@ Name:           libgdamm4
 
 #(!) summary for SRPM only
 Summary:        C++ wrappers for libgda
-Version:        3.99.7
+Version:        3.99.8
 Group: 		System/Libraries
 License:	LGPLv2+
-Release:        %mkrel 2
+Release:        %mkrel 1
 URL:            http://www.gtkmm.org/
-Source0:        http://ftp.gnome.org/pub/GNOME/sources/libgdamm/2.9/%{origname}-%{version}.tar.bz2
+Source0:        http://ftp.gnome.org/pub/GNOME/sources/libgdamm/%{origname}-%{version}.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  glibmm2.4-devel
 BuildRequires:  libgda4.0-devel >= 3.99.7
