@@ -3,7 +3,7 @@
 # api is the part of the library name before the .so
 %define api 4.0
 # major is the part of the library name after the .so
-%define major 10
+%define major 11
 %define lib_name %mklibname %{shortname} %{api} %{major}
 %define develname %mklibname gdamm %{api} -d
 
@@ -11,7 +11,7 @@ Name:           libgdamm4
 
 #(!) summary for SRPM only
 Summary:        C++ wrappers for libgda
-Version:        3.99.14
+Version:        3.99.15
 Group: 		System/Libraries
 License:	LGPLv2+
 Release:        %mkrel 1
