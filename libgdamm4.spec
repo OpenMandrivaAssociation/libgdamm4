@@ -3,7 +3,7 @@
 # api is the part of the library name before the .so
 %define api 4.0
 # major is the part of the library name after the .so
-%define major 11
+%define major 12
 %define lib_name %mklibname %{shortname} %{api} %{major}
 %define develname %mklibname gdamm %{api} -d
 
@@ -11,7 +11,7 @@ Name:           libgdamm4
 
 #(!) summary for SRPM only
 Summary:        C++ wrappers for libgda
-Version:        3.99.16
+Version:        3.99.17
 Group: 		System/Libraries
 License:	LGPLv2+
 Release:        %mkrel 1
@@ -80,10 +80,12 @@ rm -rf $RPM_BUILD_ROOT
 # ..
 # include the major number (and api if present) in the file list to catch
 #changes on version upgrade
-%doc AUTHORS COPYING ChangeLog NEWS
+%doc AUTHORS ChangeLog NEWS
 %{_libdir}/lib*-%{api}.so.%{major}*
 
 %files -n %{develname}
+%doc %_datadir/doc/libgdamm-%api
+%doc %_datadir/devhelp/books/libgdamm-%api
 %{_includedir}/libgdamm-%api
 %{_libdir}/*.a
 %{_libdir}/*.so
