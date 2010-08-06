@@ -11,7 +11,7 @@ Name:           libgdamm4
 
 #(!) summary for SRPM only
 Summary:        C++ wrappers for libgda
-Version:        3.99.20
+Version:        3.99.21
 Group: 		System/Libraries
 License:	LGPLv2+
 Release:        %mkrel 1
