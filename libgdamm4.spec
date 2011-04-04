@@ -3,7 +3,7 @@
 # api is the part of the library name before the .so
 %define api 4.0
 # major is the part of the library name after the .so
-%define major 12
+%define major 13
 %define lib_name %mklibname %{shortname} %{api} %{major}
 %define develname %mklibname gdamm %{api} -d
 
@@ -18,8 +18,9 @@ Release:        %mkrel 1
 URL:            http://www.gtkmm.org/
 Source0:        http://ftp.gnome.org/pub/GNOME/sources/libgdamm/%{origname}-%{version}.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
-BuildRequires:  glibmm2.4-devel
-BuildRequires:  libgda4.0-devel >= 4.1.6
+BuildRequires:  glibmm2.4-devel >= 2.27.93
+BuildRequires:  libgda4.0-devel >= 4.1.7
+BuildRequires:	gnome-common
 
 #Full and generic description of the whole package. (this will be the SRPM
 #description only)
@@ -58,6 +59,7 @@ to develop applications which use libgdamm.
 %setup -q -n %{origname}-%{version}
 
 %build
+NOCONFIGURE=yes gnome-autogen.sh
 %configure2_5x --enable-static
 %make
 
