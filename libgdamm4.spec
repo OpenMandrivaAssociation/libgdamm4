@@ -14,7 +14,7 @@ Summary:        C++ wrappers for libgda
 Version:        4.1.3
 Group: 		System/Libraries
 License:	LGPLv2+
-Release:        %mkrel 1
+Release:        2
 URL:            http://www.gtkmm.org/
 Source0:        http://ftp.gnome.org/pub/GNOME/sources/libgdamm/%{origname}-%{version}.tar.xz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
