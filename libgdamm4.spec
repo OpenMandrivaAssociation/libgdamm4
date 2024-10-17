@@ -14,7 +14,7 @@ Version:        4.99.11
 Release:	1
 Group: 		System/Libraries
 License:	LGPLv2+
-URL:            http://www.gtkmm.org/
+URL:            https://www.gtkmm.org/
 Source0:        https://download.gnome.org/sources/%{origname}/%{url_ver}/%{origname}-%{version}.tar.xz
 BuildRequires:	pkgconfig(glibmm-2.4) >= 2.27.93
 BuildRequires:	pkgconfig(libgda-5.0) >= 5.0.2
