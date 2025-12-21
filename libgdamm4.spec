@@ -16,6 +16,11 @@ Group: 		System/Libraries
 License:	LGPLv2+
 URL:            https://www.gtkmm.org/
 Source0:        https://download.gnome.org/sources/%{origname}/%{url_ver}/%{origname}-%{version}.tar.xz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(glibmm-2.4) >= 2.27.93
 BuildRequires:	pkgconfig(libgda-5.0) >= 5.0.2
 
